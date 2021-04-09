@@ -28,10 +28,10 @@ export function SecondsCounter() {
 				</svg>
 			</div>
 			<div id="n0" className="m-box">
-				0
+				{parseInt((count / 10000) % 10)}
 			</div>
 			<div id="n1" className="m-box">
-				0
+				{parseInt((count / 1000) % 10)}
 			</div>
 			<div id="n2" className="m-box">
 				{parseInt((count / 100) % 10)}
